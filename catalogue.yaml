@@ -49,3 +49,13 @@
       name: catalogue
       state: started
       enabled: yes
+
+  - name: copy mongodb
+    ansible.builtin.copy:
+      src: mongo.repo
+      dest: /etc/yum.repos.d/mongo.repo
+
+  - name: instal mongodb client
+    ansible.builtin.package:
+      name: mongodb-org-shell
+      state: present
