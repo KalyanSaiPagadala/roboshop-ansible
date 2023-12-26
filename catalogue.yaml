@@ -61,6 +61,6 @@
       state: present
 
   - name: load catalogue data
-    ansible.builtin.command: mongo --host mongodb.daws76s.online < /app/schema/catalogue.js
+    ansible.builtin.command: mongo --host mongodb.dawshub.cloud < /app/schema/catalogue.js
     
 
